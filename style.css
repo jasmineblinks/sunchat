@@ -11,9 +11,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: #1876f2; */
-    background: #0ebd60;
+    background: #1876f2;
+    /* background: #0ebd60; */
     padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .logo{
     width: 75px;
@@ -67,9 +70,46 @@ nav{
     height: 7px;
     border: 2px solid #fff;
     border-radius: 50%;
-    background: #3b55d9;
+    background: #0ebd60;
     position: absolute;
     top: 0;
     right: 0;
 
+}
+/* end of nav */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+
+}
+.left-row{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+}
+.right-row{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+}
+.main-row{
+    flex-basis: 47%;
+}
+.import-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.import-links a img{
+    width: 25px;
+    margin-right: 15px;
 }
